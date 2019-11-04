@@ -2,7 +2,7 @@ import React from 'react'
 
 function ArticleCard(props){
   return (
-      <div className="card light">
+      <div className={`card ${props.mode}`}>
         <h4>{props.title}</h4>
         <div className="image-wrapper">
           <img className="image" src={props.urlToImage}/>
